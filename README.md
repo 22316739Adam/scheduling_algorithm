@@ -1,2 +1,2 @@
-# scheduling_algorithm
-A project illustrating the stimulation of some scheduling algorithms within operating systems
+# scheduling_algorithm_stimulation
+The project is an academic project that demonstrates how CPU schedulers manage the flow of processes using three main algorithms: FCFS, SJF (preemptive), and Priority (preemptive), which are also used in some operating systems. The process sequence is implemented using a linked list, created by converting plain text input from the user interface. An unordered set is then used to store the processes waiting to be scheduled. The project features a Windows Forms interface developed in C# on the .NET Framework, while the scheduling algorithms are implemented in C++. The connection between the interface and the algorithms is established via a DLL, which exports the necessary functions for the C# application to call.
