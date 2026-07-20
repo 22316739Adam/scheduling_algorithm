@@ -50,7 +50,9 @@ The simulator allows users to load process information from a text file, visuali
 ## 📸 Screenshots
 
 |[Interface](imgs/int.png)
+
 |[input_format](imgs/out.png)
+
 |[output_format](imgs/inp.png)
 
 ## 📄 Data format
