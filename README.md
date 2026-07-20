@@ -86,3 +86,7 @@ Alternatively, the repository couuld be cloned through
 git clone https://github.com/22316739Adam/scheduling_algorithm.git
 ```
 and then the project should be built in release mode where the imp.dll will have all the function calls required for the application. 
+
+## Future improvements
+
+- Other scheduling algorithms could be added to the project. 
