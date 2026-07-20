@@ -1,5 +1,50 @@
-# scheduling_algorithm_stimulation
-The project is an academic project that demonstrates how CPU schedulers manage the flow of processes using three main algorithms: FCFS, SJF (preemptive), and Priority (preemptive), which are also used in some operating systems. The process sequence is implemented using a linked list, created by converting plain text input from the user interface. An unordered set is then used to store the processes waiting to be scheduled. The project features a Windows Forms interface developed in C# on the .NET Framework, while the scheduling algorithms are implemented in C++. The connection between the interface and the algorithms is established via a DLL, which exports the necessary functions for the C# application to call. Any error that would be caught during the running of the algorithms will be stoored to the debug.txt file, kindly report that if any. Feel free to try it out!
+# ⚙️ CPU Process Scheduling Simulator
 
-The project can be viewed by downloading it through the releases section where the files imp.dll, wkin.exe and the sample input.txt should be stored in the same folder. 
-Also, the repo could be cloned into the working directory. After building in release mode, copy the imp.dll into the project's release folder, then run the project through wkin.exe
+An academic project that demonstrates how operating systems schedule CPU processes using three classical scheduling algorithms. The application provides an interactive Windows Forms interface while leveraging a C++ backend for process scheduling.
+
+## 📖 Overview
+
+CPU scheduling is a fundamental concept in operating systems, responsible for determining the order in which processes access the CPU. This project simulates the behavior of three widely used scheduling algorithms:
+
+- **First Come First Served (FCFS)**
+- **Shortest Job First (Preemptive)**
+- **Priority Scheduling (Preemptive)**
+
+The simulator allows users to load process information from a text file, visualize the scheduling sequence, and observe how different algorithms affect process execution.
+
+## 🛠️ Technology stack
+
+|     Layer      | Technology |
+|----------------|------------|
+|    Backend     |    C++     |
+|   Interface    |     C#     |
+|      GUI       |   .NET     |
+| API connection |    DLL     |
+
+## 🏗️ System Architecture
+
+              User Input (input.txt)
+                        │
+                        ▼
+             Windows Forms Interface
+              (C# / .NET Framework)
+                        │
+                        ▼
+                 DLL Function Calls
+                  (imp.dll Export)
+                        │
+                        ▼
+               C++ Scheduling Engine
+                        │
+        ┌───────────────┼───────────────┐
+        ▼               ▼               ▼
+      FCFS        SJF (Preemp.)   Priority (Preemp.)
+                        │
+                        ▼
+                Scheduling Results
+                        │
+                        ▼
+          Process Execution View / Error log 
+
+
+
